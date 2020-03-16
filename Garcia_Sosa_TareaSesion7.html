@@ -23,7 +23,7 @@ text-aling; atributo global que alinea todos los textos en el centro
     margin: da margenes automaticos al contenedor div
 -->
     <header>
-        <h1>Práctica de la sesión 7</h1>
+        <h1>Práctica de la sesión 8</h1>
     </header>
 
     <!--Primer div que tiene una imagen
@@ -39,7 +39,7 @@ es de las pocas etiquetas que no tienen cierre
     border-radius: quita las esquinas puntiagudas 
     padding: da una distancia entre los bordes del div y el contenido de 10px
  -->
-    <div id="seccion_imagen">
+    <div class="imagen_texto_caja">
 
         <div class="imagen">
             <h3>Imagen</h3>
@@ -91,37 +91,37 @@ es de las pocas etiquetas que no tienen cierre
     td: tabla contenido
 
  -->
- <div class="division_tabla">
-
- 
-        <h3>Tabla</h3>
+        <div class="division_tabla_caja">
 
 
-        <table>
+            <h3>Tabla</h3>
 
-            <tr>
-                <th >Materia</th>
-                <th >Profesor</th>
-            </tr>
 
-            <tr>
-                <td class="none">Programmacion Web</td>
-                <td class="none">Abraham Vega Tapia</td>
-            </tr>
-            <tr>
-                <td class="par">Software Especializado</td>
-                <td class="par">Abraham Vega Tapia</td>
-            </tr>
-            <tr>
-                <td class="none">Bases de datos distribuidas</td>
-                <td class="none">Erick Jorgue Roberto Muñoz</td>
-            </tr>
-            <tr>
-                <td class="par">Estadistica II</td>
-                <td class="par">Cyndi Anahy</td>
-            </tr>
-        </table>
-    </div>
+            <table>
+
+                <tr>
+                    <th>Materia</th>
+                    <th>Profesor</th>
+                </tr>
+
+                <tr>
+                    <td class="none">Programmacion Web</td>
+                    <td class="none">Abraham Vega Tapia</td>
+                </tr>
+                <tr>
+                    <td class="par">Software Especializado</td>
+                    <td class="par">Abraham Vega Tapia</td>
+                </tr>
+                <tr>
+                    <td class="none">Bases de datos distribuidas</td>
+                    <td class="none">Erick Jorgue Roberto Muñoz</td>
+                </tr>
+                <tr>
+                    <td class="par">Estadistica II</td>
+                    <td class="par">Cyndi Anahy</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <!--
     class: es para usarse en css
@@ -133,8 +133,8 @@ es de las pocas etiquetas que no tienen cierre
     padding: da una distancia entre los bordes del div y el contenido de 10px
  -->
 
-    <div id="seccion_lista" >
-        <h3>Listas</h3>
+    <div id="seccion_lista">
+
         <!--
  para sentrar la lista la coloque dentro de una tabla para poder centrar la tabla dentro del contenedor y asi se 
  pudiera centrar la lista
@@ -144,47 +144,43 @@ es de las pocas etiquetas que no tienen cierre
  (siempre devemos poner lo que queramos que tenga el enlace dentro de las a href)
  target: es la forma en que se nos abrira el enlace target="_blank" significa que se nos abra una pagina nueva al dar click
  -->
-
-        <table class="uni">
-            <tr>
-                <th class="tituni">Centros Universitarios</th>
-            </tr>
-            <tr>
-                <ul>
-                    <td>
-
-                        <li>
-                            <a href="http://www.valles.udg.mx/" target="_blank">
-                                Cuvalles
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.cucea.udg.mx/" target="_blank">
-                                Cucea
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.cucei.udg.mx/" target="_blank">
-                                Cucei
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.cucba.udg.mx/" target="_blank">
-                                Cucba
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.cutonala.udg.mx/" target="_blank">
-                                CuTonala
-                            </a>
-                        </li>
-                    </td>
-                </ul>
-            </tr>
+        <div class="division_listado_caja">
 
 
-        </table>
+            <h3>Centros Universitarios</h3>
 
+
+            <ul>
+                <li>
+                    <a href="http://www.valles.udg.mx/" target="_blank">
+                        Cuvalles
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cucea.udg.mx/" target="_blank">
+                        Cucea
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cucei.udg.mx/" target="_blank">
+                        Cucei
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cucba.udg.mx/" target="_blank">
+                        Cucba
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cutonala.udg.mx/" target="_blank">
+                        CuTonala
+                    </a>
+                </li>
+            </ul>
+
+
+
+        </div>
     </div>
 
 

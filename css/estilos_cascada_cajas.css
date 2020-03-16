@@ -1,4 +1,3 @@
-
 body {
   background-color: rgb(170, 110, 110);
   text-align: center;
@@ -11,14 +10,14 @@ header {
 }
 
 /* seccion de la imagen */
-#seccion_imagen {
+.imagen_texto_caja {
   width: 1000px;
   background-color: rgb(214, 166, 166);
   margin: auto;
   border-radius: 100px;
-  padding: 10px;
+  padding: 5px;
 
-/* para poner 2 objetos en una misma linea separados
+  /* para poner 2 objetos en una misma linea separados
 use el display grid ya que estos 
 con el grid-template-columns separan los 2 objectos 
 repeat 2 1fr quiere decir que divida las 2 imagenes 
@@ -26,59 +25,70 @@ en 2 fracciones de pantalla  */
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
 
 /* div con la imagen */
-img {
+.imagen {
   border-radius: 100px;
+
+  border-bottom: black 3px solid;
+}
+
+img {
   width: 400px;
 }
+
 /* div con el texto */
 .imagen_texto {
   text-align: justify;
-  padding: 10px;
-
+  padding: 5px;
+  margin-right: 10px;
+  width: 80%;
 }
 
 /* seccion de la tabla */
 #seccion_tabla {
-  width: 1000px;
+  width: 90%;
   height: 200px;
   background-color: rgb(65, 63, 63);
   margin: 20px auto 20px auto;
   border-radius: 100px;
-  padding: 20px;
+ 
 }
 
 .division_tabla {
-  background-color: rgb(177, 169, 169);
+  background-color : rgb(177, 169, 169);
   border-radius: 100px;
   height: 170px;
+  width: 90%;
+  
 }
 
-.division_tabla table {
-  border: rgb(21, 52, 190) 3px solid;
-  width: 90%;
-  margin: auto;
+.division_tabla_caja table {
+  border: red 2px dashed;
+  width: 95%;
   border-radius: 10px;
   background-color: rgb(134, 139, 138);
   color: white;
+  padding: 3px;
+  margin: 5px 10px 5px 10px; 
 }
 
-.division_tabla th {
+.division_tabla_caja th {
   background-color: grey;
   color: white;
   border-radius: 100px;
   border: black 1px solid;
 }
 
-.division_tabla .none {
+.division_tabla_caja .none {
   background-color: white;
   color: gray;
 }
 
-.division_tabla .par {
+.division_tabla_caja .par {
   background-color: rgb(56, 135, 187);
   color: white;
 }
@@ -95,10 +105,11 @@ img {
   padding: 20px;
 }
 
+
 .tituni {
   border: black 1px solid;
   border-radius: 10px;
-  
+
 }
 
 
@@ -107,20 +118,24 @@ img {
   margin: auto;
   border: black 1px solid;
   border-radius: 5px;
-  width: 200px;
+  width: 450px;
   text-align: left;
 }
 
 /* 
 cambia el icono normal por el de una imagen 
 de las listas ordenadas */
-li{
-  list-style-image: url(/img/w1.gif);
+.division_listado_caja li{
+  list-style: none;
+  display: inline;
+  padding: 5px;
+  margin: 3px;
 }
+
 /* 
 quita las lineas de los links
 cambia el tamaño y el color */
-a{
+a {
   text-decoration: none;
   font-size: 1.3rem;
   color: rgb(36, 109, 36);
@@ -129,7 +144,13 @@ a{
 /* hover significa que cuando pase el maus 
 por encima aparesca la linea y cambie el color
  */
-a:hover{
-text-decoration: underline;
-color: hotpink;
+a:hover {
+  text-decoration: underline;
+  color: hotpink;
 }
+
+li:last-child{
+  visibility: hidden;
+}
+
+
